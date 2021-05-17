@@ -60,7 +60,7 @@
             <div class="form_item form__place width_half">
               <p class="label_text_default">出身</p>
               <select class="input_field" name="pref" id="pref">
-                <option value="tokyo" selected>東京</option>
+                <option value="tokyo">東京</option>
                 <option value="chiba">千葉</option>
                 <option value="saitama">埼玉</option>
                 <option value="kanagawa">神奈川</option>
@@ -69,7 +69,7 @@
             <!-- E-Mail -->
             <div class="form_item create-account__form__mail">
               <p class="is_mandatory label_text_default">Eメール</p>
-              <input class="input_field" type="text" name="e-mail" placeholder="ex) hoge@example.com" required>
+              <input class="input_field" type="email" name="e-mail" placeholder="ex) hoge@example.com" required>
             </div>
             <!-- 電話番号 -->
             <div class="form_item create-account__form__phone-number">
@@ -91,15 +91,15 @@
               <p class="label_text_default">希望コース</p>
               <ul class="form__course__list list_style_none">
                 <li>
-                  <input type="radio" name="course" id="front" value="front">
+                  <input type="checkbox" name="course" id="front" value="front">
                   <label for="front">フロントエンド</label>
                 </li>
                 <li>
-                  <input type="radio" name="course" id="back" value="back">
+                  <input type="checkbox" name="course" id="back" value="back">
                   <label for="back">バックエンド</label>
                 </li>
                 <li>
-                  <input type="radio" name="course" id="app" value="app">
+                  <input type="checkbox" name="course" id="app" value="app">
                   <label for="app">アプリ</label>
                 </li>
               </ul>
@@ -107,7 +107,7 @@
             <!-- 備考 -->
             <div class="form_item form__remark">
               <p class="label_text_default">備考</p>
-              <textarea class="input_field" name="textarea" id="textarea" cols="30" rows="10" placeholder="何かあればご記入ください"></textarea>
+              <textarea class="input_field" name="textarea" placeholder="何かあればご記入ください"></textarea>
             </div>
             <!-- 送信ボタン -->
             <div class="form_item form__submit">

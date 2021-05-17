@@ -261,7 +261,7 @@
   position: relative;
 }
 
-.form__course__list li input[type="radio"]+label::before {
+.form__course__list li input[type="checkbox"]+label::before {
   content: "";
   width: 17px;
   height: 17px;
@@ -272,7 +272,7 @@
   left: 0;
 }
 
-.form__course__list li input[type="radio"]:checked+label::after {
+.form__course__list li input[type="checkbox"]:checked+label::after {
   content: "";
   width: 8px;
   height: 16px;
