@@ -10,6 +10,98 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-
+    <div class="wrapper">
+      <div class="inner">
+        <main class="create-account">
+            <h1>アカウント作成</h1>
+            <div class="create-account__start">
+              <a href="">FaceBookでスタート</a>
+              <a href="">Googleでスタート</a>
+              <p>タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+            </div>
+            <p>アカウント情報</p>
+            <form action="" class="create-account__form">
+              <dl>
+                <div class="create-account__form__name">
+                  <dt>名字</dt>
+                  <dd><input type="text" name="last-name"></dd>
+                  <dt>名前</dt>
+                  <dd><input type="text" name="last-name"></dd>
+                </div>
+                <dt>性別</dt>
+                <dd>
+                  <ul>
+                    <li>
+                      <input type="radio" name="sex" id="male" value="male">
+                      <label for="male">男性</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="sex" id="female" value="female">
+                      <label for="female">女性</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="sex" id="others" value="others">
+                      <label for="others">その他</label>
+                    </li>
+                  </ul>
+                </dd>
+                <dt>出身</dt>
+                <dd>
+                  <select name="pref" id="pref">
+                    <option value="tokyo" selected>東京</option>
+                    <option value="chiba">千葉</option>
+                    <option value="saitama">埼玉</option>
+                    <option value="kanagawa">神奈川</option>
+                  </select>
+                </dd>
+                <dt>Eメール</dt>
+                <dd>
+                  <input type="text" name="e-mail" placeholder="ex) hoge@example.com">
+                </dd>
+                <dt>電話番号</dt>
+                <dd>
+                  <input type="tel" name="phone-number" placeholder="ex) 09012345678">
+                </dd>
+                <dt>パスワード</dt>
+                <dd>
+                  <input type="password" name="password">
+                </dd>
+                <dt>パスワード</dt>
+                <dd>
+                  <input type="password" name="password-confirm">
+                </dd>
+                <dt>希望コース</dt>
+                <dd>
+                  <ul>
+                    <li>
+                      <input type="radio" name="course" id="front" value="front">
+                      <label for="front">フロントエンド</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="course" id="back" value="back">
+                      <label for="back">バックエンド</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="course" id="app" value="app">
+                      <label for="app">アプリ</label>
+                    </li>
+                  </ul>
+                </dd>
+                <dt>備考</dt>
+                <dd>
+                  <textarea name="textarea" id="textarea" cols="30" rows="10">何かあればご記入ください</textarea>
+                </dd>
+              </dl>
+              <button class="create-account__form__submit" type="submit">アカウント作成</button>
+            </form>
+            <p>アカウントを作成することにより、<a href="">利用規約</a>と<a href="">プライバシーポリシー</a>に同意するものとします。</p>
+        </main>
+        <footer>
+          <p>すでにアカウントをお持ちですか？</p>
+          <a href="">ログイン</a>
+          <a href="">認証メールが届きませんか？</a>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
